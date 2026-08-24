@@ -43,7 +43,7 @@ function SeriesPage() {
           </h1>
           <p className="mt-4 max-w-xl text-muted-foreground">{series.description}</p>
           <button
-            onClick={() => play(episodes[0].id)}
+            onClick={() => play(episodes[0]!.id)}
             className="mt-6 flex w-fit items-center gap-2 rounded bg-primary px-6 py-3 text-sm font-semibold text-primary-foreground transition hover:bg-primary-glow"
           >
             <Play className="h-4 w-4 fill-current" /> Play Episode 1
