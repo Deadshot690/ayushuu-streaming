@@ -4,7 +4,7 @@ import { brand, img } from "@/content/content";
 import { Wordmark } from "@/components/Wordmark";
 
 const profiles = [
-  { id: "ayushuu", name: brand.nickname, image: img.profile },
+  { id: "Anne", name: brand.nickname, image: img.profile },
   { id: "main", name: "The Main Character", image: img.p1 },
   { id: "story", name: "Our Story", image: img.p5 },
 ];
@@ -70,3 +70,4 @@ export function ProfileSelector({ onSelect }: { onSelect: () => void }) {
     </motion.div>
   );
 }
+

@@ -7,12 +7,12 @@ import { EpisodeCard } from "@/components/EpisodeCard";
 export const Route = createFileRoute("/series")({
   head: () => ({
     meta: [
-      { title: "The Story of Ayushuu — Series" },
+      { title: "The Story of Anne — Series" },
       {
         name: "description",
         content: "One season, eight chapters about the girl who makes ordinary days cinematic.",
       },
-      { property: "og:title", content: "The Story of Ayushuu — Series" },
+      { property: "og:title", content: "The Story of Anne — Series" },
       {
         property: "og:description",
         content: "Season 1: eight chapters of chaos, kindness and inside jokes.",
@@ -62,3 +62,4 @@ function SeriesPage() {
     </div>
   );
 }
+

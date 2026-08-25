@@ -79,14 +79,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Ayushuu Originals — The Story of Ayushuu" },
+      { title: "Anne Originals — The Story of Anne" },
       {
         name: "description",
         content:
           "A cinematic streaming experience built entirely out of memories, moments and one very special birthday.",
       },
-      { name: "author", content: "Ayushuu Originals" },
-      { property: "og:title", content: "Ayushuu Originals — The Story of Ayushuu" },
+      { name: "author", content: "Anne Originals" },
+      { property: "og:title", content: "Anne Originals — The Story of Anne" },
       {
         property: "og:description",
         content: "A private streaming service made for Ayesha. One season. Eight chapters.",
@@ -139,4 +139,5 @@ function RootComponent() {
     </QueryClientProvider>
   );
 }
+
 

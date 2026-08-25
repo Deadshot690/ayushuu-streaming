@@ -52,8 +52,8 @@ interface ExperienceValue {
 const Ctx = createContext<ExperienceValue | null>(null);
 
 const LS = {
-  list: "ayushuu.mylist",
-  progress: "ayushuu.progress",
+  list: "Anne.mylist",
+  progress: "Anne.progress",
 };
 
 function readLS<T>(key: string, fallback: T): T {
@@ -88,7 +88,7 @@ export function ExperienceProvider({ children }: { children: ReactNode }) {
     setMyList(readLS<string[]>(LS.list, []));
     setProgress(readLS<Progress>(LS.progress, {}));
     try {
-      if (sessionStorage.getItem("ayushuu.entered") === "1") setStageState("app");
+      if (sessionStorage.getItem("Anne.entered") === "1") setStageState("app");
     } catch {
       /* ignore */
     }
@@ -97,8 +97,8 @@ export function ExperienceProvider({ children }: { children: ReactNode }) {
   const setStage = useCallback((s: Stage) => {
     setStageState(s);
     try {
-      if (s === "app") sessionStorage.setItem("ayushuu.entered", "1");
-      else sessionStorage.removeItem("ayushuu.entered");
+      if (s === "app") sessionStorage.setItem("Anne.entered", "1");
+      else sessionStorage.removeItem("Anne.entered");
     } catch {
       /* ignore */
     }
@@ -176,3 +176,4 @@ export function useExperience() {
   if (!ctx) throw new Error("useExperience must be used inside ExperienceProvider");
   return ctx;
 }
+

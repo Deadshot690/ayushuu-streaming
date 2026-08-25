@@ -7,16 +7,16 @@ import { ContentRow } from "@/components/ContentRow";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Ayushuu Originals — Home" },
+      { title: "Anne Originals — Home" },
       {
         name: "description",
         content:
           "Browse the Ayesha Cinematic Universe: original films, one season of chapters and a birthday special.",
       },
-      { property: "og:title", content: "Ayushuu Originals — Home" },
+      { property: "og:title", content: "Anne Originals — Home" },
       {
         property: "og:description",
-        content: "Original films, chapters and memories — streaming exclusively for Ayushuu.",
+        content: "Original films, chapters and memories — streaming exclusively for Anne.",
       },
     ],
   }),
@@ -40,3 +40,4 @@ function Index() {
     </>
   );
 }
+

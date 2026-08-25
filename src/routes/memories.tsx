@@ -4,12 +4,12 @@ import { MemoriesGallery } from "@/components/MemoriesGallery";
 export const Route = createFileRoute("/memories")({
   head: () => ({
     meta: [
-      { title: "Memories — Ayushuu Originals" },
+      { title: "Memories — Anne Originals" },
       {
         name: "description",
         content: "A gallery of small, unremarkable moments that turned out to be the whole point.",
       },
-      { property: "og:title", content: "Memories — Ayushuu Originals" },
+      { property: "og:title", content: "Memories — Anne Originals" },
       {
         property: "og:description",
         content: "Photographs, captions and dates from the Ayesha Cinematic Universe.",
@@ -35,3 +35,4 @@ function MemoriesPage() {
     </div>
   );
 }
+

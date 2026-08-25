@@ -1,10 +1,10 @@
-# Ayushuu Streaming
+# Anne Streaming
 
-Ayesha / Ayushuu — Cinematic Birthday Streaming Experience
+Ayesha / Anne — Cinematic Birthday Streaming Experience
 
 1. PROJECT VISION
 
-Build a premium, cinematic, romantic birthday website for a girl named Ayesha, whose nickname is Ayushuu.
+Build a premium, cinematic, romantic birthday website for a girl named Ayesha, whose nickname is Anne.
 
 This website should feel like a fictional premium streaming platform created exclusively around her life, memories, personality, photos, videos, and birthday.
 
@@ -42,7 +42,7 @@ It should NOT look like a generic birthday template.
 
 It should feel intentional, expensive, emotional, badass, romantic, aesthetic, and highly polished.
 
-The website is for Ayesha / Ayushuu.
+The website is for Ayesha / Anne.
 
 2. CORE BRANDING
 
@@ -50,7 +50,7 @@ Create a fictional streaming brand around her.
 
 Primary brand:
 
-AYUSHUU ORIGINALS
+Anne ORIGINALS
 
 Secondary branding:
 
@@ -66,7 +66,7 @@ Create an original text-based logo inspired by premium streaming branding.
 
 Example:
 
-AYUSHUU
+Anne
 ORIGINALS
 
 The logo should use elegant typography with a cinematic appearance.
@@ -259,7 +259,7 @@ Very subtle ambient animation.
 
 Then display:
 
-AYUSHUU ORIGINALS
+Anne ORIGINALS
 
 with a slow cinematic reveal.
 
@@ -275,7 +275,7 @@ Photo gets a cinematic zoom
 
 Dark overlay fades in
 
-"AYUSHUU ORIGINALS" appears
+"Anne ORIGINALS" appears
 
 Small text appears:
 
@@ -309,7 +309,7 @@ Below it, create profile cards.
 
 Primary profile:
 
-Ayushuu
+Anne
 
 Use Ayesha's uploaded photo as the profile image.
 
@@ -333,7 +333,7 @@ Border appears
 
 Name becomes brighter
 
-When the user clicks Ayushuu:
+When the user clicks Anne:
 
 Profile scales slightly
 
@@ -353,7 +353,7 @@ Desktop:
 
 Left:
 
-AYUSHUU ORIGINALS
+Anne ORIGINALS
 
 Center/left navigation:
 
@@ -409,7 +409,7 @@ Content positioned toward the lower-left.
 
 Display:
 
-AYUSHUU ORIGINAL
+Anne ORIGINAL
 
 Small label:
 
@@ -417,7 +417,7 @@ A BIRTHDAY SPECIAL
 
 Title:
 
-THE STORY OF AYUSHUU
+THE STORY OF Anne
 
 Metadata:
 
@@ -427,7 +427,7 @@ Description:
 
 Write an elegant short description such as:
 
-"A collection of moments, memories, laughter, chaos and everything that makes Ayushuu impossible to forget."
+"A collection of moments, memories, laughter, chaos and everything that makes Anne impossible to forget."
 
 Buttons:
 
@@ -531,7 +531,7 @@ Each row should have horizontal cards.
 
 Suggested sections:
 
-Popular on Ayushuu
+Popular on Anne
 
 Continue Watching
 
@@ -684,7 +684,7 @@ Create a dedicated Series section.
 
 Primary series:
 
-THE STORY OF AYUSHUU
+THE STORY OF Anne
 
 Season selector:
 
@@ -750,7 +750,7 @@ When an episode starts:
 
 Show a short overlay:
 
-AYUSHUU ORIGINALS
+Anne ORIGINALS
 
 Then:
 
@@ -931,7 +931,7 @@ Use warmer romantic imagery.
 
 Include a card:
 
-HAPPY BIRTHDAY, AYUSHUU
+HAPPY BIRTHDAY, Anne
 
 Clicking it opens a cinematic birthday message.
 
@@ -965,11 +965,11 @@ pause
 
 pause
 
-"It's Ayushuu's day."
+"It's Anne's day."
 
 Then:
 
-HAPPY BIRTHDAY, AYUSHUU
+HAPPY BIRTHDAY, Anne
 
 Then show her photo.
 
@@ -991,7 +991,7 @@ THE END
 
 A STORY ABOUT
 
-AYUSHUU
+Anne
 
 Directed by
 Life
@@ -1022,7 +1022,7 @@ Every Little Moment
 
 Then:
 
-Happy Birthday, Ayushuu.
+Happy Birthday, Anne.
 
 The credits should scroll slowly like real movie credits.
 
@@ -1038,7 +1038,7 @@ Then display:
 
 HAPPY BIRTHDAY
 
-AYUSHUU
+Anne
 
 Small text:
 
@@ -1329,7 +1329,7 @@ Do NOT reproduce the exact Netflix branding.
 
 Create an original visual identity around:
 
-AYUSHUU ORIGINALS
+Anne ORIGINALS
 
 41. MAIN USER JOURNEY
 
@@ -1343,7 +1343,7 @@ CINEMATIC INTRO
 
 ↓
 
-AYUSHUU ORIGINALS
+Anne ORIGINALS
 
 ↓
 
@@ -1351,7 +1351,7 @@ WHO'S WATCHING?
 
 ↓
 
-AYUSHUU PROFILE
+Anne PROFILE
 
 ↓
 
@@ -1395,7 +1395,7 @@ CREDITS
 
 ↓
 
-HAPPY BIRTHDAY AYUSHUU
+HAPPY BIRTHDAY Anne
 
 ↓
 
@@ -1516,7 +1516,7 @@ Does the final screen leave an emotional impact?
 
 If any answer is no, improve it before considering the implementation complete.
 
-The final website should feel like a real premium streaming service created specifically for Ayesha / Ayushuu, not like a generic birthday template.
+The final website should feel like a real premium streaming service created specifically for Ayesha / Anne, not like a generic birthday template.
 
 Build the first complete version now with the uploaded Ayesha media where appropriate and use elegant placeholders only where content mapping is still required.
 
@@ -1540,3 +1540,4 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+

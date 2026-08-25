@@ -5,7 +5,7 @@
 @custom-variant dark (&:is(.dark *));
 
 /*
- * AYUSHUU ORIGINALS — cinematic streaming design system.
+ * Anne ORIGINALS — cinematic streaming design system.
  * All colors in oklch. Never hardcode colors in components.
  */
 
@@ -193,3 +193,4 @@
     transition-duration: 0.05ms !important;
   }
 }
+

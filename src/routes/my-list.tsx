@@ -6,15 +6,15 @@ import { MediaCard } from "@/components/MediaCard";
 export const Route = createFileRoute("/my-list")({
   head: () => ({
     meta: [
-      { title: "My List — Ayushuu Originals" },
+      { title: "My List — Anne Originals" },
       {
         name: "description",
         content: "The moments you saved to watch again, kept safely on this device.",
       },
-      { property: "og:title", content: "My List — Ayushuu Originals" },
+      { property: "og:title", content: "My List — Anne Originals" },
       {
         property: "og:description",
-        content: "Your saved chapters, films and memories from Ayushuu Originals.",
+        content: "Your saved chapters, films and memories from Anne Originals.",
       },
     ],
   }),
@@ -51,3 +51,4 @@ function MyListPage() {
     </div>
   );
 }
+

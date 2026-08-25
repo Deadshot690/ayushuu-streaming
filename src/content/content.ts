@@ -9,12 +9,12 @@
  */
 
 export const brand = {
-  name: "AYUSHUU",
+  name: "Anne",
   sub: "ORIGINALS",
   tagline: "AN ORIGINAL STORY",
   universe: "Ayesha Cinematic Universe",
   personName: "Ayesha",
-  nickname: "Ayushuu",
+  nickname: "Anne",
   year: 2026,
 };
 
@@ -63,12 +63,12 @@ export interface MediaItem {
 }
 
 export const hero = {
-  label: "AYUSHUU ORIGINAL",
+  label: "Anne ORIGINAL",
   kicker: "A BIRTHDAY SPECIAL",
-  title: "THE STORY OF AYUSHUU",
+  title: "THE STORY OF Anne",
   meta: "2026 • 1 Season • HD",
   description:
-    "A collection of moments, memories, laughter, chaos and everything that makes Ayushuu impossible to forget.",
+    "A collection of moments, memories, laughter, chaos and everything that makes Anne impossible to forget.",
   image: img.hero,
   /** Optional: "/media/videos/hero.mp4" */
   video: undefined as string | undefined,
@@ -215,8 +215,8 @@ export const movies: MediaItem[] = [
 ];
 
 export const series = {
-  id: "the-story-of-ayushuu",
-  title: "THE STORY OF AYUSHUU",
+  id: "the-story-of-Anne",
+  title: "THE STORY OF Anne",
   description:
     "One season. Eight chapters. Every one of them about the girl who makes ordinary days look like scenes from a film.",
   backdrop: img.hero,
@@ -272,7 +272,7 @@ export const episodes: MediaItem[] = [
 export const birthdaySpecial: MediaItem = {
   id: "birthday-special",
   type: "movie",
-  title: "HAPPY BIRTHDAY, AYUSHUU",
+  title: "HAPPY BIRTHDAY, Anne",
   image: img.birthday,
   backdrop: img.birthday,
   description: "A message that took a whole year to write and about four seconds to mean.",
@@ -296,7 +296,7 @@ export const memories = [
 ];
 
 export const rows: { key: string; title: string }[] = [
-  { key: "popular", title: "Popular on Ayushuu" },
+  { key: "popular", title: "Popular on Anne" },
   { key: "romantic", title: "Because You Love These Memories" },
   { key: "favorites", title: "Our Favorite Moments" },
   { key: "main-character", title: "The Main Character Collection" },
@@ -312,9 +312,9 @@ export const birthday = {
     "...and somehow make ordinary moments...",
     "...feel like scenes from a movie.",
     "Today isn't just another day.",
-    "It's Ayushuu's day.",
+    "It's Anne's day.",
   ],
-  title: "HAPPY BIRTHDAY, AYUSHUU",
+  title: "HAPPY BIRTHDAY, Anne",
   photo: img.profile,
   message: `Ayesha,
 
@@ -324,7 +324,7 @@ This little streaming service exists because one page felt too small for everyth
 
 Thank you for every episode so far. I hope this year is loud, soft, unplanned and completely yours.
 
-Happy birthday, Ayushuu.`,
+Happy birthday, Anne.`,
   signature: "— With everything, always.",
 };
 
@@ -354,3 +354,4 @@ export const allItems: MediaItem[] = [...movies, ...episodes, birthdaySpecial];
 export const byId = (id: string) => allItems.find((i) => i.id === id);
 
 export const byCategory = (key: string) => allItems.filter((i) => i.categories.includes(key));
+
