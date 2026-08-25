@@ -26,7 +26,7 @@ export function EpisodeCard({ item, index }: { item: MediaItem; index: number })
           src={item.image}
           alt={item.title}
           loading="lazy"
-          className="h-full w-full object-cover transition duration-700 group-hover:scale-105"
+          className="h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
         />
         <div className="absolute inset-0 flex items-center justify-center bg-background/40 opacity-0 transition group-hover:opacity-100">
           <Play className="h-6 w-6 fill-current" />

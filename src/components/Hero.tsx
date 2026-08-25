@@ -24,7 +24,7 @@ export function Hero() {
             src={hero.image}
             alt=""
             aria-hidden
-            className="ken-burns h-full w-full object-cover"
+            className="ken-burns h-full w-full object-cover object-top"
           />
         )}
         <div className="hero-fade-side absolute inset-0" />

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { Link, useRouterState } from "@tanstack/react-router";
-import { Gift, Menu, Search, X } from "lucide-react";
+import { Gift, Menu, Search, Volume2, VolumeX, X } from "lucide-react";
 import { img } from "@/content/content";
 import { useExperience } from "@/lib/experience";
 import { Wordmark } from "@/components/Wordmark";
@@ -15,7 +15,7 @@ const links = [
 ] as const;
 
 export function Navbar() {
-  const { setSearchOpen, setBirthdayOpen } = useExperience();
+  const { setSearchOpen, setBirthdayOpen, muted, toggleMuted } = useExperience();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const pathname = useRouterState({ select: (s) => s.location.pathname });
@@ -57,6 +57,14 @@ export function Navbar() {
         </ul>
 
         <div className="ml-auto flex items-center gap-2 sm:gap-3">
+          <button
+            onClick={toggleMuted}
+            aria-label={muted ? "Enable Ambient Music" : "Mute Ambient Music"}
+            title={muted ? "Enable Ambient Music" : "Mute Ambient Music"}
+            className="rounded-full p-2 text-muted-foreground transition hover:text-foreground"
+          >
+            {muted ? <VolumeX className="h-5 w-5 opacity-60" /> : <Volume2 className="h-5 w-5 text-primary" />}
+          </button>
           <button
             onClick={() => setSearchOpen(true)}
             aria-label="Search"

@@ -5,8 +5,7 @@ import { Wordmark } from "@/components/Wordmark";
 
 const profiles = [
   { id: "Anne", name: brand.nickname, image: img.profile },
-  { id: "main", name: "The Main Character", image: img.p1 },
-  { id: "story", name: "Our Story", image: img.p5 },
+  { id: "main", name: "The Main Character", image: img.p4 },
 ];
 
 export function ProfileSelector({ onSelect }: { onSelect: () => void }) {
@@ -55,7 +54,7 @@ export function ProfileSelector({ onSelect }: { onSelect: () => void }) {
                 src={p.image}
                 alt={p.name}
                 loading="lazy"
-                className="h-full w-full object-cover transition duration-500 group-hover:scale-105"
+                className="h-full w-full object-cover object-top transition duration-500 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-background/20 transition group-hover:bg-transparent" />
             </div>

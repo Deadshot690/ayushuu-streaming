@@ -9,12 +9,12 @@ export const Route = createFileRoute("/movies")({
       {
         name: "description",
         content:
-          "Every original film in the Ayesha Cinematic Universe, from The Beginning to The Memories.",
+          "Every original film in the Anne Cinematic Universe, from The Beginning to The Memories.",
       },
       { property: "og:title", content: "Movies — Anne Originals" },
       {
         property: "og:description",
-        content: "Eight original films made out of ordinary days that refused to stay ordinary.",
+        content: "Four original films made out of ordinary days that refused to stay ordinary.",
       },
     ],
   }),

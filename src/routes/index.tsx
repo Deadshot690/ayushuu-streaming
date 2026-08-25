@@ -11,7 +11,7 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Browse the Ayesha Cinematic Universe: original films, one season of chapters and a birthday special.",
+          "Browse the Anne Cinematic Universe: original films, one season of chapters and a birthday special.",
       },
       { property: "og:title", content: "Anne Originals — Home" },
       {

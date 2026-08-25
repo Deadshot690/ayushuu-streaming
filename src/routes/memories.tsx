@@ -12,7 +12,7 @@ export const Route = createFileRoute("/memories")({
       { property: "og:title", content: "Memories — Anne Originals" },
       {
         property: "og:description",
-        content: "Photographs, captions and dates from the Ayesha Cinematic Universe.",
+        content: "Photographs, captions and dates from the Anne Cinematic Universe.",
       },
     ],
   }),

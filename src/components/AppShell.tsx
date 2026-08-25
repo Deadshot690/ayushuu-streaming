@@ -11,6 +11,7 @@ import { SearchOverlay } from "@/components/SearchOverlay";
 import { VideoPlayer } from "@/components/VideoPlayer";
 import { BirthdayExperience } from "@/components/BirthdayExperience";
 import { CreditsSequence } from "@/components/CreditsSequence";
+import { AmbientAudio } from "@/components/AmbientAudio";
 import { Wordmark } from "@/components/Wordmark";
 
 export function AppShell({ children }: { children: ReactNode }) {
@@ -29,6 +30,7 @@ export function AppShell({ children }: { children: ReactNode }) {
 
   return (
     <div className="min-h-svh bg-background">
+      <AmbientAudio />
       <AnimatePresence mode="wait">
         {stage === "intro" && <IntroSequence key="intro" onDone={() => setStage("profile")} />}
         {stage === "profile" && (

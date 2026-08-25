@@ -36,7 +36,7 @@ export function VideoPlayer({ item }: { item: MediaItem }) {
   const [current, setCurrent] = useState(Math.max(start, 0));
   const [duration, setDuration] = useState(item.duration || 1);
   const [playing, setPlaying] = useState(true);
-  const [muted, setMuted] = useState(true);
+  const [muted, setMuted] = useState(false);
   const [volume, setVolume] = useState(0.7);
   const [fullscreen, setFullscreen] = useState(false);
   const [controls, setControls] = useState(true);
@@ -99,8 +99,16 @@ export function VideoPlayer({ item }: { item: MediaItem }) {
     if (!v) return;
     v.muted = muted;
     v.volume = volume;
-    if (playing) void v.play().catch(() => setPlaying(false));
-    else v.pause();
+    if (playing) {
+      void v.play().catch(() => {
+        // Fallback to muted autoplay if browser blocks unmuted autoplay
+        v.muted = true;
+        setMuted(true);
+        void v.play().catch(() => setPlaying(false));
+      });
+    } else {
+      v.pause();
+    }
   }, [playing, muted, volume]);
 
   const seek = (t: number) => {
@@ -173,17 +181,24 @@ export function VideoPlayer({ item }: { item: MediaItem }) {
           />
         ) : (
           <AnimatePresence mode="sync">
-            <motion.img
-              key={stills[stillIndex]}
-              src={stills[stillIndex]}
-              alt={item.title}
-              initial={{ opacity: 0, scale: 1.06 }}
-              animate={{ opacity: 1, scale: 1.14 }}
-              exit={{ opacity: 0 }}
-              transition={{ opacity: { duration: 1.2 }, scale: { duration: 24, ease: "linear" } }}
-              className="absolute inset-0 h-full w-full object-cover"
-              onError={() => setFailed(true)}
-            />
+            <div key={stills[stillIndex]} className="absolute inset-0 flex items-center justify-center bg-black">
+              <img
+                src={stills[stillIndex]}
+                alt=""
+                aria-hidden
+                className="absolute inset-0 h-full w-full object-cover blur-2xl opacity-40 scale-105"
+              />
+              <motion.img
+                src={stills[stillIndex]}
+                alt={item.title}
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                exit={{ opacity: 0 }}
+                transition={{ duration: 1.2 }}
+                className="relative z-10 h-full w-full object-contain"
+                onError={() => setFailed(true)}
+              />
+            </div>
           </AnimatePresence>
         )}
         <div className="pointer-events-none absolute inset-0 bg-background/25" />

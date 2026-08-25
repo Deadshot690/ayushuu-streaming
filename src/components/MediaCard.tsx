@@ -45,7 +45,7 @@ export function MediaCard({
             src={item.image}
             alt={item.title}
             loading="lazy"
-            className="h-full w-full object-cover transition duration-700 group-hover:scale-108"
+            className="h-full w-full object-cover object-top transition duration-700 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-background via-background/10 to-transparent opacity-80" />
 

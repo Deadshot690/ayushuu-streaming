@@ -5,36 +5,46 @@
  * birthday message, credits. UI components never hardcode content.
  *
  * Media lives in: public/media/images, public/media/videos, public/media/music
- * To use a real video, drop it in public/media/videos and set `video: "/media/videos/foo.mp4"`.
  */
 
 export const brand = {
   name: "Anne",
   sub: "ORIGINALS",
   tagline: "AN ORIGINAL STORY",
-  universe: "Ayesha Cinematic Universe",
-  personName: "Ayesha",
+  universe: "Anne Cinematic Universe",
+  personName: "Anne",
   nickname: "Anne",
   year: 2026,
 };
 
 export const music = {
-  /** Optional. Drop an mp3 at public/media/music/theme.mp3 to enable ambient score. */
-  theme: "/media/music/theme.mp3",
+  theme: "/media/music/theme.weba",
 };
 
 export const img = {
-  hero: "/media/images/hero.jpg",
-  profile: "/media/images/profile.jpg",
-  birthday: "/media/images/birthday.jpg",
-  p1: "/media/images/p1.jpg",
-  p2: "/media/images/p2.jpg",
-  p3: "/media/images/p3.jpg",
-  p4: "/media/images/p4.jpg",
-  p5: "/media/images/p5.jpg",
-  p6: "/media/images/p6.jpg",
-  p7: "/media/images/p7.jpg",
-  p8: "/media/images/p8.jpg",
+  p1: "/media/images/Anee (1).jpeg",
+  p2: "/media/images/Anee (2).jpeg",
+  p3: "/media/images/Anee (3).jpeg",
+  p4: "/media/images/Anee (4).jpeg",
+  p5: "/media/images/Anee (5).jpeg",
+  p6: "/media/images/Anee (6).jpeg",
+  p7: "/media/images/Anee (7).jpeg",
+  p8: "/media/images/Anee (8).jpeg",
+  p9: "/media/images/Anee (9).jpeg",
+  p10: "/media/images/Anee (10).jpeg",
+  p11: "/media/images/Anee (11).jpeg",
+  p12: "/media/images/Anee (12).jpeg",
+  p13: "/media/images/Anee (13).jpeg",
+  hero: "/media/images/Anee (1).jpeg",
+  profile: "/media/images/Anee (1).jpeg",
+  birthday: "/media/images/Anee (9).jpeg",
+};
+
+export const videos = {
+  v1: "/media/videos/Anee (1).mp4",
+  v2: "/media/videos/Anee (2).mp4",
+  v3: "/media/videos/Anee (3).mp4",
+  v4: "/media/videos/Anee (4).mp4",
 };
 
 export type MediaType = "movie" | "episode" | "memory";
@@ -69,88 +79,19 @@ export const hero = {
   meta: "2026 • 1 Season • HD",
   description:
     "A collection of moments, memories, laughter, chaos and everything that makes Anne impossible to forget.",
-  image: img.hero,
-  /** Optional: "/media/videos/hero.mp4" */
-  video: undefined as string | undefined,
+  image: img.p1,
+  video: videos.v1,
   playId: "s01e01",
 };
 
 export const movies: MediaItem[] = [
-  {
-    id: "m-beginning",
-    type: "movie",
-    title: "THE BEGINNING",
-    image: img.p8,
-    backdrop: img.p8,
-    reel: [img.p8, img.p3, img.p5],
-    description:
-      "Before the inside jokes and the 2 a.m. voice notes, there was just an ordinary day that quietly decided to matter forever.",
-    duration: 96,
-    durationLabel: "1h 36m",
-    year: 2023,
-    genre: "Romance • Drama",
-    rating: "U/A 13+",
-    categories: ["popular", "romantic", "recent"],
-    related: ["m-that-one-day", "m-main-character"],
-  },
-  {
-    id: "m-that-one-day",
-    type: "movie",
-    title: "THAT ONE DAY",
-    image: img.p3,
-    backdrop: img.p3,
-    reel: [img.p3, img.p2, img.p6],
-    description:
-      "Two coffees, zero plans, and a conversation that refused to end. Nothing happened. Everything happened.",
-    duration: 84,
-    durationLabel: "1h 24m",
-    year: 2024,
-    genre: "Slice of Life",
-    rating: "U",
-    categories: ["popular", "favorites", "romantic"],
-    related: ["m-beginning", "m-good-days"],
-  },
-  {
-    id: "m-main-character",
-    type: "movie",
-    title: "THE MAIN CHARACTER",
-    image: img.p1,
-    backdrop: img.p1,
-    reel: [img.p1, img.p6, img.p5],
-    description:
-      "She walks into a room and the lighting department quietly panics. A study in effortless presence.",
-    duration: 112,
-    durationLabel: "1h 52m",
-    year: 2025,
-    genre: "Drama",
-    rating: "U/A 16+",
-    categories: ["popular", "main-character", "recent"],
-    related: ["m-unplanned", "m-chaos"],
-  },
-  {
-    id: "m-unplanned",
-    type: "movie",
-    title: "UNPLANNED",
-    image: img.p6,
-    backdrop: img.p6,
-    reel: [img.p6, img.p2],
-    description:
-      "The best nights never had an itinerary. A road, a playlist, and absolutely no idea where it ends.",
-    duration: 78,
-    durationLabel: "1h 18m",
-    year: 2025,
-    genre: "Adventure",
-    rating: "U",
-    categories: ["favorites", "chaos", "recent"],
-    related: ["m-chaos", "m-that-one-day"],
-  },
   {
     id: "m-good-days",
     type: "movie",
     title: "THE GOOD DAYS",
     image: img.p5,
     backdrop: img.p5,
-    reel: [img.p5, img.p7, img.p3],
+    reel: [img.p5],
     description:
       "Warm light, loud laughter, and the kind of evening you only recognise as perfect much, much later.",
     duration: 101,
@@ -158,8 +99,25 @@ export const movies: MediaItem[] = [
     year: 2024,
     genre: "Feel Good",
     rating: "U",
-    categories: ["favorites", "romantic", "main-character"],
-    related: ["m-forever-young", "m-memories"],
+    categories: ["favorites"],
+    related: ["m-unplanned", "m-forever-young"],
+  },
+  {
+    id: "m-unplanned",
+    type: "movie",
+    title: "UNPLANNED ADVENTURES",
+    image: img.p6,
+    backdrop: img.p6,
+    reel: [img.p6],
+    description:
+      "The best nights never had an itinerary. A road, a playlist, and absolutely no idea where it ends.",
+    duration: 78,
+    durationLabel: "1h 18m",
+    year: 2025,
+    genre: "Adventure",
+    rating: "U",
+    categories: ["chaos"],
+    related: ["m-good-days", "m-forever-young"],
   },
   {
     id: "m-forever-young",
@@ -167,7 +125,7 @@ export const movies: MediaItem[] = [
     title: "FOREVER YOUNG",
     image: img.p7,
     backdrop: img.p7,
-    reel: [img.p7, img.p4],
+    reel: [img.p7],
     description:
       "Sparklers, terrible singing, and a promise that some things are never going to grow up.",
     duration: 88,
@@ -175,33 +133,16 @@ export const movies: MediaItem[] = [
     year: 2026,
     genre: "Celebration",
     rating: "U",
-    categories: ["birthday", "recent", "favorites"],
+    categories: ["birthday"],
     related: ["m-memories", "m-good-days"],
-  },
-  {
-    id: "m-chaos",
-    type: "movie",
-    title: "A LITTLE CHAOS",
-    image: img.p2,
-    backdrop: img.p2,
-    reel: [img.p2, img.p6, img.p1],
-    description:
-      "A comedy in which absolutely nothing goes to plan and somehow that becomes the best part.",
-    duration: 73,
-    durationLabel: "1h 13m",
-    year: 2025,
-    genre: "Comedy",
-    rating: "U/A 13+",
-    categories: ["chaos", "popular"],
-    related: ["m-unplanned", "m-main-character"],
   },
   {
     id: "m-memories",
     type: "movie",
     title: "THE MEMORIES",
-    image: img.p4,
-    backdrop: img.p4,
-    reel: [img.p4, img.p5, img.p8],
+    image: img.p8,
+    backdrop: img.p8,
+    reel: [img.p8],
     description:
       "An anthology of small, unremarkable moments that turned out to be the whole point.",
     duration: 120,
@@ -209,8 +150,8 @@ export const movies: MediaItem[] = [
     year: 2026,
     genre: "Anthology",
     rating: "U",
-    categories: ["romantic", "birthday", "favorites"],
-    related: ["m-good-days", "m-beginning"],
+    categories: ["romantic"],
+    related: ["m-good-days", "m-unplanned"],
   },
 ];
 
@@ -218,8 +159,8 @@ export const series = {
   id: "the-story-of-Anne",
   title: "THE STORY OF Anne",
   description:
-    "One season. Eight chapters. Every one of them about the girl who makes ordinary days look like scenes from a film.",
-  backdrop: img.hero,
+    "One season. Four video chapters. Every one of them about the girl who makes ordinary days look like scenes from a film.",
+  backdrop: img.p1,
   seasons: [1],
 };
 
@@ -228,6 +169,7 @@ const ep = (
   title: string,
   description: string,
   image: string,
+  video: string | undefined,
   duration: number,
   durationLabel: string,
   categories: string[] = [],
@@ -237,7 +179,8 @@ const ep = (
   title,
   image,
   backdrop: image,
-  reel: [image, img.hero],
+  ...(video ? { video } : {}),
+  reel: [image],
   description,
   duration,
   durationLabel,
@@ -250,31 +193,27 @@ const ep = (
 });
 
 export const episodes: MediaItem[] = [
-  ep(1, "The Beginning", "Where the story quietly starts, without anyone noticing it has.", img.p8, 62, "62m", [
+  ep(1, "The Beginning", "Where the story quietly starts, featuring real video moments captured on camera.", img.p1, videos.v1, 62, "Full Video", [
     "popular",
-    "recent",
   ]),
-  ep(2, "Main Character Energy", "Some people just arrive. The room adjusts around them.", img.p1, 54, "54m", [
+  ep(2, "Main Character Energy", "Some people just arrive. The room adjusts around them.", img.p2, videos.v2, 54, "Full Video", [
     "main-character",
   ]),
-  ep(3, "The Chaos Begins", "Plans collapse. Laughter survives. Highly recommended.", img.p2, 48, "48m", ["chaos"]),
-  ep(4, "That One Memory", "Some moments weren't planned. They just became memories.", img.p3, 57, "57m", [
-    "favorites",
+  ep(3, "The Chaos Begins", "Plans collapse. Laughter survives. Highly recommended.", img.p3, videos.v3, 48, "Full Video", [
+    "chaos",
   ]),
-  ep(5, "The Best Days", "Warm light, long evenings, nowhere else to be.", img.p5, 61, "61m", ["favorites"]),
-  ep(6, "Unplanned Adventures", "The road, the playlist, and no destination.", img.p6, 52, "52m", ["chaos"]),
-  ep(7, "The People Who Matter", "A short list. A very short list. And she's at the top of it.", img.p7, 59, "59m", [
+  ep(4, "That One Memory", "Some moments weren't planned. They just became memories.", img.p4, videos.v4, 57, "Full Video", [
     "romantic",
   ]),
-  ep(8, "To Be Continued", "The season ends. The story really doesn't.", img.p4, 66, "66m", ["birthday", "recent"]),
 ];
 
 export const birthdaySpecial: MediaItem = {
   id: "birthday-special",
   type: "movie",
   title: "HAPPY BIRTHDAY, Anne",
-  image: img.birthday,
-  backdrop: img.birthday,
+  image: img.p9,
+  backdrop: img.p9,
+  reel: [img.p9],
   description: "A message that took a whole year to write and about four seconds to mean.",
   duration: 0,
   durationLabel: "Special",
@@ -285,14 +224,10 @@ export const birthdaySpecial: MediaItem = {
 };
 
 export const memories = [
-  { id: "mem1", title: "A Random Day", date: "March 2024", caption: "Nothing was happening. It was perfect.", image: img.p3 },
-  { id: "mem2", title: "The Laugh We Couldn't Stop", date: "June 2024", caption: "Neither of us remember why.", image: img.p2 },
-  { id: "mem3", title: "One For The Camera Roll", date: "August 2024", caption: "Taken badly. Kept forever.", image: img.p1 },
-  { id: "mem4", title: "The Day Everything Felt Right", date: "November 2024", caption: "Golden hour did most of the work.", image: img.hero },
-  { id: "mem5", title: "Late Lights", date: "January 2025", caption: "We stayed longer than we should have.", image: img.p5 },
-  { id: "mem6", title: "The Long Drive", date: "April 2025", caption: "The playlist was elite. Obviously.", image: img.p6 },
-  { id: "mem7", title: "Sparks", date: "September 2025", caption: "Held light in our hands for a second.", image: img.p7 },
-  { id: "mem8", title: "Morning, Slowly", date: "February 2026", caption: "The quietest kind of happy.", image: img.p8 },
+  { id: "mem1", title: "A Random Day", date: "March 2024", caption: "Nothing was happening. It was perfect.", image: img.p10 },
+  { id: "mem2", title: "The Laugh We Couldn't Stop", date: "June 2024", caption: "Neither of us remember why.", image: img.p11 },
+  { id: "mem3", title: "One For The Camera Roll", date: "August 2024", caption: "Taken badly. Kept forever.", image: img.p12 },
+  { id: "mem4", title: "Morning, Slowly", date: "February 2026", caption: "The quietest kind of happy.", image: img.p13 },
 ];
 
 export const rows: { key: string; title: string }[] = [
@@ -302,7 +237,6 @@ export const rows: { key: string; title: string }[] = [
   { key: "main-character", title: "The Main Character Collection" },
   { key: "chaos", title: "Comedy & Chaos" },
   { key: "birthday", title: "Birthday Specials" },
-  { key: "recent", title: "Recently Added" },
 ];
 
 /** BIRTHDAY EXPERIENCE — edit these freely. */
@@ -315,8 +249,8 @@ export const birthday = {
     "It's Anne's day.",
   ],
   title: "HAPPY BIRTHDAY, Anne",
-  photo: img.profile,
-  message: `Ayesha,
+  photo: img.p9,
+  message: `Anne,
 
 You have this ridiculous ability to turn normal days into something worth remembering. A boring evening becomes a story. A random photo becomes a favourite. A bad joke becomes a permanent inside joke.
 
@@ -349,9 +283,10 @@ export const castCredits = [
   { role: "Written by", name: "Memories" },
 ];
 
-export const allItems: MediaItem[] = [...movies, ...episodes, birthdaySpecial];
+export const allItems: MediaItem[] = [...episodes, ...movies, birthdaySpecial];
 
 export const byId = (id: string) => allItems.find((i) => i.id === id);
 
 export const byCategory = (key: string) => allItems.filter((i) => i.categories.includes(key));
+
 

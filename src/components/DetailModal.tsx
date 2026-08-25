@@ -40,9 +40,19 @@ export function DetailModal({ id }: { id: string }) {
         onClick={(e) => e.stopPropagation()}
         className="mx-auto my-6 w-[min(56rem,94vw)] overflow-hidden rounded-xl border border-border bg-card shadow-[var(--shadow-card)]"
       >
-        <div className="relative aspect-video w-full">
-          <img src={item.backdrop} alt={item.title} className="h-full w-full object-cover" />
-          <div className="hero-fade absolute inset-0" />
+        <div className="relative aspect-video w-full overflow-hidden bg-black/90">
+          <img
+            src={item.backdrop}
+            alt=""
+            aria-hidden
+            className="absolute inset-0 h-full w-full object-cover blur-2xl opacity-40 scale-105"
+          />
+          <img
+            src={item.backdrop}
+            alt={item.title}
+            className="relative z-10 h-full w-full object-contain"
+          />
+          <div className="hero-fade absolute inset-0 z-20" />
           <button
             onClick={closeDetail}
             aria-label="Close"

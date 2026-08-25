@@ -10,7 +10,6 @@ import {
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
-import { reportLovableError } from "../lib/lovable-error-reporting";
 import { ExperienceProvider } from "@/lib/experience";
 import { AppShell } from "@/components/AppShell";
 
@@ -36,12 +35,8 @@ function NotFoundComponent() {
   );
 }
 
-function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
-  console.error(error);
+function ErrorComponent({ reset }: { error: Error; reset: () => void }) {
   const router = useRouter();
-  useEffect(() => {
-    reportLovableError(error, { boundary: "tanstack_root_error_component" });
-  }, [error]);
 
   return (
     <div className="flex min-h-screen items-center justify-center bg-background px-4">
@@ -89,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:title", content: "Anne Originals — The Story of Anne" },
       {
         property: "og:description",
-        content: "A private streaming service made for Ayesha. One season. Eight chapters.",
+        content: "A private streaming service made for Anne. One season. Eight chapters.",
       },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -102,7 +97,8 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: "https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;800&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Bebas+Neue&display=swap",
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.svg", type: "image/svg+xml" },
+      { rel: "alternate icon", href: "/favicon.ico", type: "image/x-icon" },
     ],
   }),
   shellComponent: RootShell,

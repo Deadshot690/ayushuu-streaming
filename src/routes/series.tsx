@@ -10,12 +10,12 @@ export const Route = createFileRoute("/series")({
       { title: "The Story of Anne — Series" },
       {
         name: "description",
-        content: "One season, eight chapters about the girl who makes ordinary days cinematic.",
+        content: "One season, four video chapters about the girl who makes ordinary days cinematic.",
       },
       { property: "og:title", content: "The Story of Anne — Series" },
       {
         property: "og:description",
-        content: "Season 1: eight chapters of chaos, kindness and inside jokes.",
+        content: "Season 1: four video chapters of chaos, kindness and inside jokes.",
       },
     ],
   }),

@@ -82,7 +82,7 @@ export function ExperienceProvider({ children }: { children: ReactNode }) {
   const [searchOpen, setSearchOpen] = useState(false);
   const [birthdayOpen, setBirthdayOpen] = useState(false);
   const [creditsOpen, setCreditsOpen] = useState(false);
-  const [muted, setMuted] = useState(true);
+  const [muted, setMuted] = useState(false);
 
   useEffect(() => {
     setMyList(readLS<string[]>(LS.list, []));
